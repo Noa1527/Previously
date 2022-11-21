@@ -1,0 +1,26 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 70px;
+
+    .container-news {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .row-home {
+            padding: 20px 0;
+        }
+    }
+
+    .container-news::-webkit-scrollbar {
+        display: none;
+    }
+}

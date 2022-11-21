@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-primary: #081118;
+  --color-secondary: #161c22;
+  --text-color-light: #000;
+  --text-color-dark: #cdcfd0;
+  --text-color-secondary: #31363b;
+}
+
+@font-face {
+  font-family:'ProximaNova-Bold';
+  src: url('./assets/fonts/proximanova-bold.otf') format('otf')
+}
+
+#root {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  background-color: var(--color-primary);
+}
+
+html,
+body {
+  /* height: 100%; */
+  /* width: 100vw; */
+  font-size: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  font: 300 11px/1.4 "Helvetica Neue", "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}

@@ -1,0 +1,64 @@
+.movies {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 70px;
+
+
+    .container-movies {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .row-movies {
+            padding: 20px 0;
+
+            .interesting {
+                width: 100%;
+            }
+
+            .all-movies {
+                width: 100%;
+
+            }
+
+            .click-to-see {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .btn-add {
+                    width: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 20px 0;
+
+                    span {
+                        margin-right: 7px;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-size: 20px;
+                        font-family: 'ProximaNova-Bold', Arial, sans-serif;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .container-movies::-webkit-scrollbar {
+        display: none;
+    }
+}

@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('../../assets/fonts/proximanova-bold.otf') format('otf')
+}
+
+.content-shows-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .fillter-shows {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .fillter {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .fillter__item {
+                .fillter-genre {
+                    select {
+                        width: 95px;
+                        height: 60px;
+                        border-radius: 6px;
+                        font-size: 28px;
+                        font-family: 'ProximaNova-Bold', Arial, sans-serif;
+                        font-weight: 700;
+                        background-color: #31363b;
+                        color: #fff;
+                    }
+                }
+
+                .fillter-text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    p {
+                        margin: 0;
+                        padding: 5px 10px;
+                        font-size: 28px;
+                        color: #cdcfd0;
+                        font-family: 'ProximaNova-Bold', Arial, sans-serif;
+                        font-weight: bolder;
+                        font-weight: 700;
+                    }
+                }
+
+                .fillter-platforme {
+                    select {
+                        width: 290px;
+                        height: 60px;
+                        border-radius: 6px;
+                        font-size: 28px;
+                        font-family: 'ProximaNova-Bold', Arial, sans-serif;
+                        font-weight: 700;
+                        background-color: #31363b;
+                        color: #fff;
+
+                        option {
+                            width: 290px;
+                            height: 60px;
+                            border-radius: 6px;
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+
+            .text-infos {
+                margin: 10px 0;
+                padding: 5px;
+                line-height: 21px;
+                color: rgb(255, 255, 255);
+                font-family: "ProximaNova-Medium", Arial, sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .shows-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px auto;
+        gap: 10px;
+
+        .shows-gallery__item {
+            max-width: 13%;
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            height: 340px;
+
+            .shows-gallery__item__img {
+                width: 170px;
+                height: 240px;
+                border-radius: 6px;
+
+                .show-item-img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 6px;
+                    &:hover {
+                        cursor: pointer;
+                        opacity: .5;
+                    }
+                }
+            }
+
+            .text-shows {
+                width: 100%;
+                padding: 0 10px;
+                height: 25%;
+
+                h5 {
+                    width: 100%;
+                    font-size: 14px;
+                    color: #cdcfd0;
+                }
+            }
+        }
+    }
+}

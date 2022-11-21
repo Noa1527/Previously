@@ -1,0 +1,70 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.background {
+    background-color: #161c22;
+    padding: 10px;
+    margin: 10px 0;
+    height: 400px;
+
+    .icon-slider {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            color: #cdcfd0;
+            margin-bottom: 20px;
+        }
+    }
+
+    .container-movies {
+        width: 100%;
+
+        .slider {
+            width: 100%;
+            transition: transform 0.5s ease-in-out;
+
+            .films-container {
+                display: flex;
+                width: 100%;
+                background-color: #161c22;
+
+                .film-card {
+                    max-width: 15%;
+                    margin-right: 10px;
+
+                    .text-shows {
+                        width: 100%;
+                        padding: 0 10px;
+
+                        h5 {
+                            width: 100%;
+
+                            font-size: 14px;
+                            color: #cdcfd0;
+                        }
+                    }
+
+                    .slider__item {
+                        flex: 0 0 15%;
+                        max-width: 15%;
+                        padding: 0.50rem;
+
+                        .show-card-img {
+                            border-radius: 6px;
+                            width: 160px;
+                            height: 240px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
